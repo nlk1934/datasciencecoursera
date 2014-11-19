@@ -1,4 +1,8 @@
- makeCacheMatrix <- function(x = matrix()) {
+# define you matrix: x <- makeCacheMatrix((matrix(c(1,2,3,4), nrow=2, ncol=2)))
+# then get your matrix by: x$get()
+# cache your inversed matrix by: cacheSolve(x)
+
+makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
         set <- function(y) {
                 x <<- y
